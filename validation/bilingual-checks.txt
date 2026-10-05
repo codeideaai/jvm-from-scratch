@@ -1,0 +1,48 @@
+PASS en 01
+PASS zh 01
+PASS en 02
+PASS zh 02
+PASS en 03
+PASS zh 03
+PASS en 04
+PASS zh 04
+PASS en 05
+PASS zh 05
+PASS en 06
+PASS zh 06
+PASS en 07
+PASS zh 07
+PASS en 08
+PASS zh 08
+PASS en 09
+PASS zh 09
+PASS en 10
+PASS zh 10
+PASS en 11
+PASS zh 11
+PASS en 12
+PASS zh 12
+PASS en 13
+PASS zh 13
+PASS en 14
+PASS zh 14
+PASS en 15
+PASS zh 15
+PASS en 16
+PASS zh 16
+PASS en 17
+PASS zh 17
+PASS en 18
+PASS zh 18
+All 36 selected article editions passed.
+
+PASS 321 local Markdown links
+PASS 23 language pairs and shared Java/XML/output blocks
+PASS 46 rendered pages: language attributes, counterpart links, local link targets
+PASS Browser: English homepage and English sidebar by default
+PASS Browser: Chapter 03 English -> Chinese -> English retains the chapter
+PASS Browser: Chapter 03 -> Chapter 04, with updated Chinese counterpart
+PASS Browser: document titles use chapter titles, not filenames
+PASS Visual check: English homepage and Chinese chapter layout
+Quarto portable runtime: 1.10.18
+No public deployment performed.

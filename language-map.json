@@ -1,0 +1,122 @@
+[
+  {
+    "en": "index.html",
+    "zh": "zh/index.html"
+  },
+  {
+    "en": "en/tutorial/beginner-guide.html",
+    "zh": "tutorial/新手学习路线与补齐说明.html"
+  },
+  {
+    "en": "en/foundations/F01-first-program.html",
+    "zh": "foundations/F01-先把一个Java程序跑起来.html"
+  },
+  {
+    "en": "en/foundations/F02-memory-and-references.html",
+    "zh": "foundations/F02-画清内存区域与对象引用.html"
+  },
+  {
+    "en": "en/foundations/F03-read-bytecode.html",
+    "zh": "foundations/F03-亲手推演栈帧与class文件.html"
+  },
+  {
+    "en": "en/foundations/F04-gc-from-graphs.html",
+    "zh": "foundations/F04-先看引用图再理解垃圾回收.html"
+  },
+  {
+    "en": "en/foundations/F05-memory-failures.html",
+    "zh": "foundations/F05-分清内存溢出泄漏与GC压力.html"
+  },
+  {
+    "en": "en/foundations/F06-threads-and-order.html",
+    "zh": "foundations/F06-把线程时序画出来再谈可见性.html"
+  },
+  {
+    "en": "en/tutorial/00-introduction.html",
+    "zh": "tutorial/00-导读与学习路线.html"
+  },
+  {
+    "en": "en/tutorial/01-source-to-bytecode.html",
+    "zh": "tutorial/01-从源码追到字节码.html"
+  },
+  {
+    "en": "en/tutorial/02-primitive-types.html",
+    "zh": "tutorial/02-理解基本类型与数值边界.html"
+  },
+  {
+    "en": "en/tutorial/03-class-initialization.html",
+    "zh": "tutorial/03-分清类加载与初始化.html"
+  },
+  {
+    "en": "en/tutorial/04-class-loader-identity.html",
+    "zh": "tutorial/04-用类加载器隔离同名类型.html"
+  },
+  {
+    "en": "en/tutorial/05-method-dispatch.html",
+    "zh": "tutorial/05-区分重载与动态分派.html"
+  },
+  {
+    "en": "en/tutorial/06-exceptions-and-resources.html",
+    "zh": "tutorial/06-沿异常表理解资源关闭.html"
+  },
+  {
+    "en": "en/tutorial/07-reflection-method-handles-lambdas.html",
+    "zh": "tutorial/07-连接反射方法句柄与Lambda.html"
+  },
+  {
+    "en": "en/tutorial/08-references-and-gc-roots.html",
+    "zh": "tutorial/08-从对象引用走到垃圾回收根.html"
+  },
+  {
+    "en": "en/tutorial/09-gc-logs.html",
+    "zh": "tutorial/09-用GC日志观察分配压力.html"
+  },
+  {
+    "en": "en/tutorial/10-happens-before.html",
+    "zh": "tutorial/10-用happens-before安全发布数据.html"
+  },
+  {
+    "en": "en/tutorial/11-monitors.html",
+    "zh": "tutorial/11-理解监视器与复合操作.html"
+  },
+  {
+    "en": "en/tutorial/12-generics-and-sugar.html",
+    "zh": "tutorial/12-拆开泛型与编译器语法糖.html"
+  },
+  {
+    "en": "en/tutorial/13-jit-and-inlining.html",
+    "zh": "tutorial/13-观察即时编译与方法内联.html"
+  },
+  {
+    "en": "en/tutorial/14-escape-analysis-and-loops.html",
+    "zh": "tutorial/14-理解逃逸分析循环优化与向量化.html"
+  },
+  {
+    "en": "en/tutorial/15-performance-experiments.html",
+    "zh": "tutorial/15-建立可信的性能实验.html"
+  },
+  {
+    "en": "en/tutorial/16-diagnostics-and-jfr.html",
+    "zh": "tutorial/16-把线程堆与JFR串成诊断流程.html"
+  },
+  {
+    "en": "en/tutorial/17-java-agent.html",
+    "zh": "tutorial/17-编写最小JavaAgent观察对象尺寸.html"
+  },
+  {
+    "en": "en/tutorial/18-bounded-cache.html",
+    "zh": "tutorial/18-综合实战定位无界缓存增长.html"
+  },
+  {
+    "en": "en/tutorial/19-extension-mechanisms.html",
+    "zh": "tutorial/19-扩展篇编译期生成与本地执行.html"
+  },
+  {
+    "en": "en/tutorial/validation.html",
+    "zh": "tutorial/验证记录.html"
+  },
+  {
+    "en": "en/tutorial/sources.html",
+    "zh": "tutorial/技术文档与版本说明.html"
+  }
+]

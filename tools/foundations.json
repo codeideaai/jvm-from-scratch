@@ -1,0 +1,54 @@
+[
+  {
+    "id": "F01",
+    "class": "Foundation01",
+    "en": "en/foundations/F01-first-program.md",
+    "zh": "foundations/F01-先把一个Java程序跑起来.md",
+    "source": "examples/foundations/Foundation01.java",
+    "vm_args": []
+  },
+  {
+    "id": "F02",
+    "class": "Foundation02",
+    "en": "en/foundations/F02-memory-and-references.md",
+    "zh": "foundations/F02-画清内存区域与对象引用.md",
+    "source": "examples/foundations/Foundation02.java",
+    "vm_args": []
+  },
+  {
+    "id": "F03",
+    "class": "Foundation03",
+    "en": "en/foundations/F03-read-bytecode.md",
+    "zh": "foundations/F03-亲手推演栈帧与class文件.md",
+    "source": "examples/foundations/Foundation03.java",
+    "vm_args": []
+  },
+  {
+    "id": "F04",
+    "class": "Foundation04",
+    "en": "en/foundations/F04-gc-from-graphs.md",
+    "zh": "foundations/F04-先看引用图再理解垃圾回收.md",
+    "source": "examples/foundations/Foundation04.java",
+    "vm_args": []
+  },
+  {
+    "id": "F05",
+    "class": "Foundation05",
+    "en": "en/foundations/F05-memory-failures.md",
+    "zh": "foundations/F05-分清内存溢出泄漏与GC压力.md",
+    "source": "examples/foundations/Foundation05.java",
+    "vm_args": [
+      "-Xms16m",
+      "-Xmx32m",
+      "-XX:+UseSerialGC"
+    ]
+  },
+  {
+    "id": "F06",
+    "class": "Foundation06",
+    "en": "en/foundations/F06-threads-and-order.md",
+    "zh": "foundations/F06-把线程时序画出来再谈可见性.md",
+    "source": "examples/foundations/Foundation06.java",
+    "vm_args": []
+  }
+]

@@ -1,0 +1,189 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - DEVELOPMENT*.md
+    - README*.md
+    - validation/
+    - examples/README*.md
+    - examples/jmh/README*.md
+  render:
+    - index.qmd
+    - zh/index.qmd
+    - tutorial/*.md
+    - en/tutorial/*.md
+    - foundations/*.md
+    - en/foundations/*.md
+website:
+  title: "Understanding the JVM"
+  description: "A bilingual JVM learning path, from beginner foundations to runnable JDK 17 experiments"
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    right:
+      - href: index.qmd
+        text: "English"
+      - href: zh/index.qmd
+        text: "中文"
+  sidebar:
+    - id: english
+      title: "Contents"
+      style: docked
+      search: true
+      contents:
+        - href: index.qmd
+          text: "Course overview"
+        - section: "Start here"
+          contents:
+            - href: en/tutorial/beginner-guide.md
+              text: "Beginner Learning Path"
+        - section: "Foundations"
+          contents:
+            - href: en/foundations/F01-first-program.md
+              text: "F01 Run Your First Java Program"
+            - href: en/foundations/F02-memory-and-references.md
+              text: "F02 Draw Memory Areas and Object References"
+            - href: en/foundations/F03-read-bytecode.md
+              text: "F03 Trace Frames and Read a Class File"
+            - href: en/foundations/F04-gc-from-graphs.md
+              text: "F04 Understand GC through Reference Graphs"
+            - href: en/foundations/F05-memory-failures.md
+              text: "F05 Separate Memory Exhaustion, Leaks, and GC Pressure"
+            - href: en/foundations/F06-threads-and-order.md
+              text: "F06 Draw Thread Schedules before Discussing Visibility"
+        - section: "Main course"
+          contents:
+            - href: en/tutorial/00-introduction.md
+              text: "00 Introduction and Learning Path"
+            - href: en/tutorial/01-source-to-bytecode.md
+              text: "01 From Source Code to Bytecode"
+            - href: en/tutorial/02-primitive-types.md
+              text: "02 Primitive Types and Numeric Boundaries"
+            - href: en/tutorial/03-class-initialization.md
+              text: "03 Separating Class Loading from Initialization"
+            - href: en/tutorial/04-class-loader-identity.md
+              text: "04 Isolating Same-Named Types with Class Loaders"
+            - href: en/tutorial/05-method-dispatch.md
+              text: "05 Overloading and Dynamic Dispatch"
+            - href: en/tutorial/06-exceptions-and-resources.md
+              text: "06 Exception Tables and Resource Cleanup"
+            - href: en/tutorial/07-reflection-method-handles-lambdas.md
+              text: "07 Connecting Reflection, Method Handles, and Lambdas"
+            - href: en/tutorial/08-references-and-gc-roots.md
+              text: "08 From Object References to GC Roots"
+            - href: en/tutorial/09-gc-logs.md
+              text: "09 Observing Allocation Pressure with GC Logs"
+            - href: en/tutorial/10-happens-before.md
+              text: "10 Publishing Data with Happens-Before"
+            - href: en/tutorial/11-monitors.md
+              text: "11 Monitors and Compound Operations"
+            - href: en/tutorial/12-generics-and-sugar.md
+              text: "12 Generics and Compiler Desugaring"
+            - href: en/tutorial/13-jit-and-inlining.md
+              text: "13 Observing JIT Compilation and Inlining"
+            - href: en/tutorial/14-escape-analysis-and-loops.md
+              text: "14 Escape Analysis, Loop Optimization, and Vectorization"
+            - href: en/tutorial/15-performance-experiments.md
+              text: "15 Building Trustworthy Performance Experiments"
+            - href: en/tutorial/16-diagnostics-and-jfr.md
+              text: "16 Connecting Thread, Heap, and JFR Evidence"
+            - href: en/tutorial/17-java-agent.md
+              text: "17 A Minimal Java Agent for Object Sizes"
+            - href: en/tutorial/18-bounded-cache.md
+              text: "18 Case Study: Diagnosing Unbounded Cache Growth"
+            - href: en/tutorial/19-extension-mechanisms.md
+              text: "19 Extension Mechanisms: Compile-Time Generation and Native Execution"
+        - section: "Appendices"
+          contents:
+            - href: en/tutorial/validation.md
+              text: "Validation Record"
+            - href: en/tutorial/sources.md
+              text: "Technical References"
+    - id: chinese
+      title: "目录"
+      style: docked
+      search: true
+      contents:
+        - href: zh/index.qmd
+          text: "课程介绍"
+        - section: "新手先看"
+          contents:
+            - href: tutorial/新手学习路线与补齐说明.md
+              text: "新手学习路线"
+        - section: "六篇先修课"
+          contents:
+            - href: foundations/F01-先把一个Java程序跑起来.md
+              text: "F01 先把一个Java程序跑起来"
+            - href: foundations/F02-画清内存区域与对象引用.md
+              text: "F02 画清内存区域与对象引用"
+            - href: foundations/F03-亲手推演栈帧与class文件.md
+              text: "F03 亲手推演栈帧与class文件"
+            - href: foundations/F04-先看引用图再理解垃圾回收.md
+              text: "F04 先看引用图再理解垃圾回收"
+            - href: foundations/F05-分清内存溢出泄漏与GC压力.md
+              text: "F05 分清内存溢出泄漏与GC压力"
+            - href: foundations/F06-把线程时序画出来再谈可见性.md
+              text: "F06 把线程时序画出来再谈可见性"
+        - section: "主线实验"
+          contents:
+            - href: tutorial/00-导读与学习路线.md
+              text: "00 导读与学习路线"
+            - href: tutorial/01-从源码追到字节码.md
+              text: "01 从源码追到字节码"
+            - href: tutorial/02-理解基本类型与数值边界.md
+              text: "02 理解基本类型与数值边界"
+            - href: tutorial/03-分清类加载与初始化.md
+              text: "03 分清类加载与初始化"
+            - href: tutorial/04-用类加载器隔离同名类型.md
+              text: "04 用类加载器隔离同名类型"
+            - href: tutorial/05-区分重载与动态分派.md
+              text: "05 区分重载与动态分派"
+            - href: tutorial/06-沿异常表理解资源关闭.md
+              text: "06 沿异常表理解资源关闭"
+            - href: tutorial/07-连接反射方法句柄与Lambda.md
+              text: "07 连接反射方法句柄与Lambda"
+            - href: tutorial/08-从对象引用走到垃圾回收根.md
+              text: "08 从对象引用走到垃圾回收根"
+            - href: tutorial/09-用GC日志观察分配压力.md
+              text: "09 用GC日志观察分配压力"
+            - href: tutorial/10-用happens-before安全发布数据.md
+              text: "10 用happens-before安全发布数据"
+            - href: tutorial/11-理解监视器与复合操作.md
+              text: "11 理解监视器与复合操作"
+            - href: tutorial/12-拆开泛型与编译器语法糖.md
+              text: "12 拆开泛型与编译器语法糖"
+            - href: tutorial/13-观察即时编译与方法内联.md
+              text: "13 观察即时编译与方法内联"
+            - href: tutorial/14-理解逃逸分析循环优化与向量化.md
+              text: "14 理解逃逸分析循环优化与向量化"
+            - href: tutorial/15-建立可信的性能实验.md
+              text: "15 建立可信的性能实验"
+            - href: tutorial/16-把线程堆与JFR串成诊断流程.md
+              text: "16 把线程堆与JFR串成诊断流程"
+            - href: tutorial/17-编写最小JavaAgent观察对象尺寸.md
+              text: "17 编写最小JavaAgent观察对象尺寸"
+            - href: tutorial/18-综合实战定位无界缓存增长.md
+              text: "18 综合实战定位无界缓存增长"
+            - href: tutorial/19-扩展篇编译期生成与本地执行.md
+              text: "19 扩展篇：连接编译期生成与本地执行"
+        - section: "附录"
+          contents:
+            - href: tutorial/验证记录.md
+              text: "验证记录"
+            - href: tutorial/技术文档与版本说明.md
+              text: "技术文档与版本说明"
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: scroll
+filters:
+  - filters/site-links.lua
+execute:
+  eval: false
+lang: en

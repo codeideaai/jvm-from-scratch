@@ -1,0 +1,151 @@
+10    1       3       java.lang.Object::<init> (1 bytes)
+11    2       3       java.lang.String::hashCode (60 bytes)
+                              @ 17   java.lang.String::isLatin1 (19 bytes)   inline
+                              @ 27   java.lang.StringLatin1::hashCode (42 bytes)   callee is too large
+                              @ 37  java/lang/StringUTF16::hashCode (not loaded)   not inlineable
+11    3       3       java.lang.String::coder (15 bytes)
+11    4       3       java.lang.String::length (11 bytes)
+                              @ 6   java.lang.String::coder (15 bytes)   inline
+12    5     n 0       jdk.internal.misc.Unsafe::getReferenceVolatile (native)   
+12    6       3       Demo13::step (6 bytes)
+12    7       4       Demo13::step (6 bytes)
+12    6       3       Demo13::step (6 bytes)   made not entrant
+12    8 %     3       Demo13::batch @ 4 (25 bytes)
+                              @ 11   Demo13::step (6 bytes)   inline
+12    9       3       Demo13::batch (25 bytes)
+                              @ 11   Demo13::step (6 bytes)   inline
+12   10 %     4       Demo13::batch @ 4 (25 bytes)
+13    8 %     3       Demo13::batch @ 4 (25 bytes)   made not entrant
+                              @ 11   Demo13::step (6 bytes)   inline (hot)
+13   11       4       Demo13::batch (25 bytes)
+14    9       3       Demo13::batch (25 bytes)   made not entrant
+                              @ 11   Demo13::step (6 bytes)   inline (hot)
+18   12       3       java.lang.String::isLatin1 (19 bytes)
+19   13     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLL)L (native)   (static)
+19   14     n 0       java.lang.Object::hashCode (native)   
+19   15     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLL)L (native)   
+19   16     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLLLLL)L (native)   (static)
+19   17     n 0       java.lang.System::arraycopy (native)   (static)
+19   18     n 0       java.lang.Class::isPrimitive (native)   
+19   19       1       java.lang.Enum::ordinal (5 bytes)
+19   20     n 0       java.lang.invoke.MethodHandle::linkToStatic(LJL)L (native)   (static)
+19   21       3       java.util.Objects::requireNonNull (14 bytes)
+                              @ 8   java.lang.NullPointerException::<init> (5 bytes)   don't inline Throwable constructors
+19   22       1       java.lang.Class::getClassLoader0 (5 bytes)
+19   23     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLL)L (native)   (static)
+19   24       3       java.util.concurrent.ConcurrentHashMap::spread (10 bytes)
+19   25       3       java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)
+19   27     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLL)L (native)   (static)
+                              @ 15   jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)   inline
+                                @ 3   jdk.internal.misc.Unsafe::getReferenceVolatile (0 bytes)   intrinsic
+20   26       3       jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)
+                              @ 3   jdk.internal.misc.Unsafe::getReferenceVolatile (0 bytes)   intrinsic
+20   28     n 0       java.lang.invoke.MethodHandle::invokeBasic(LJ)L (native)   
+20   29     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLJL)L (native)   (static)
+20   30     n 0       java.lang.Class::isArray (native)   
+20   31       1       java.lang.invoke.MethodType::returnType (5 bytes)
+20   32     n 0       jdk.internal.misc.Unsafe::compareAndSetLong (native)   
+20   33       3       java.lang.String::charAt (25 bytes)
+                              @ 1   java.lang.String::isLatin1 (19 bytes)   inline
+                              @ 12   java.lang.StringLatin1::charAt (28 bytes)   inline
+                                @ 15  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 21  java/lang/StringUTF16::charAt (not loaded)   not inlineable
+20   34       3       java.lang.StringLatin1::charAt (28 bytes)
+                              @ 15  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+20   35     n 0       jdk.internal.misc.Unsafe::compareAndSetReference (native)   
+20   36       3       java.lang.invoke.MethodTypeForm::canonicalize (74 bytes)
+20   37     n 0       java.lang.invoke.MethodHandle::linkToStatic(JLJLL)J (native)   (static)
+                              @ 10   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                   20   38       4       java.lang.Object::<init> (1 bytes)
+           @ 45   sun.invoke.util.Wrapper::asPrimitiveType (20 bytes)   inline
+        20   39     n 0       java.lang.invoke.MethodHandle::invokeBasic(JLJL)J (native)   
+                        @ 1   sun.invoke.util.Wrapper::findWrapperType (25 bytes)   inline
+                                20   40     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJLJLL)J (native)   (static)
+  @ 4   sun.invoke.util.Wrapper::20    1       3       java.lang.Object::<init> (1 bytes)   made not entrant
+hashWrap (63 bytes)   callee is too large
+                                @ 10   sun.invoke.util.Wrapper::primitiveType (5 bytes)   inline
+                                @ 14   sun.invoke.util.Wrapper::forceType (72 bytes)   callee is too large
+                              @ 68   sun.invoke.util.Wrapper::asWrapperType (18 bytes)   inline
+                                @ 1   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                                @ 8   sun.invoke.util.Wrapper::forPrimitiveType (49 bytes)   callee is too large
+                                @ 12   sun.invoke.util.Wrapper::wrapperType (52 bytes)   callee is too large
+21   41     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLL)L (native)   (static)
+21   43     n 0       java.lang.Object::clone (native)   
+21   44     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLL)L (native)   
+21   42       3       java.lang.invoke.MemberName::testFlags (16 bytes)
+21   45     n 0       java.lang.invoke.MethodHandle::invokeBasic(JLJ)J (native)   
+21   46     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJLJL)J (native)   (static)
+21   47       3       java.lang.Math::min (11 bytes)
+21   48     n 0       java.lang.invoke.MethodHandle::linkToStatic(JL)L (native)   (static)
+21   49   !   3       java.lang.ref.ReferenceQueue::poll (28 bytes)
+                              @ 17   java.lang.ref.ReferenceQueue::reallyPoll (65 bytes)   callee is too large
+21   50       3       java.util.Objects::equals (23 bytes)
+                              @ 11   java.lang.Object::equals (11 bytes)   no static binding
+21   53     n 0       java.lang.invoke.MethodHandle::invokeBasic(J)L (native)   
+21   52       3       java.lang.invoke.MethodType::hashCode (53 bytes)
+21   54     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJL)L (native)   (static)
+                              @ 6   java.lang.Object::hashCode (0 bytes)   native method
+                              @ 40   java.lang.Object::hashCode (0 bytes)   native method
+21   55       3       java.lang.invoke.MemberName::isInvocable (8 bytes)
+                              @ 4   java.lang.invoke.MemberName::testAnyFlags (15 bytes)   inline
+                                @ 3   java.lang.invoke.MemberName::testFlags (16 bytes)   inline
+22   51       1       java.lang.invoke.MemberName::getDeclaringClass (5 bytes)
+22   57       3       java.util.concurrent.ConcurrentHashMap::get (162 bytes)
+                              @ 1   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 4   java.util.concurrent.ConcurrentHashMap::spread (10 bytes)   inline
+                              @ 34   java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   callee uses too much stack
+                              @ 73   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 93   java.util.concurrent.ConcurrentHashMap$Node::find (52 bytes)   no static binding
+                              @ 149   java.lang.Object::equals (11 bytes)   no static binding
+22   59     n 0       java.lang.invoke.MethodHandle::linkToStatic(JJL)J (native)   (static)
+22   61     n 0       java.lang.invoke.MethodHandle::invokeBasic(JJ)J (native)   
+22   62     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJJL)J (native)   (static)
+22   56       3       jdk.internal.org.objectweb.asm.SymbolTable::get (13 bytes)
+22   58       3       jdk.internal.org.objectweb.asm.SymbolTable::hash (10 bytes)
+                              @ 4   java.lang.String::hashCode (60 bytes)   callee is too large
+22   60       1       java.lang.invoke.MethodType::ptypes (5 bytes)
+22   64     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLJL)L (native)   (static)
+22   63       3       java.lang.invoke.MethodType::checkSlotCount (33 bytes)
+                              @ 13   java.lang.StringBuilder::<init> (7 bytes)   inline
+                                @ 3   java.lang.AbstractStringBuilder::<init> (39 bytes)   callee is too large
+                              @ 18   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                              @ 22   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (55 bytes)   callee is too large
+                              @ 25   java.lang.StringBuilder::toString (35 bytes)   inline
+                              22   65     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLJ)L (native)   
+  @ 1   java.lang.AbstractStringBuilder::isLatin1 (19 bytes)   inline
+                                @ 16   java.lang.StringLatin1::newString (24 bytes)   callee uses too much stack
+                                @ 31  java/lang/StringUTF16::newString (not loaded)   not inlineable
+                              @ 28   java.lang.invoke.MethodHandleStatics::newIllegalArgumentException (9 bytes)   inline
+                                @ 5   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+22   66       3       jdk.internal.org.objectweb.asm.ByteVector::putUTF8 (144 bytes)
+                              @ 1   java.lang.String::length (11 bytes)   inline
+                                @ 6   java.lang.String::coder (15 bytes)   inline
+                              @ 17   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+                              @ 43  22   68     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLLL)L (native)   (static)
+ jdk.internal.org.objectweb.asm.ByteVector::enlarge (51 bytes)   callee is too large
+                              @ 85   java.lang.String::charAt (25 bytes)   inline
+                                @ 1   java.lang.String::isLatin1 (19 bytes)   inline
+                                @ 12   java.lang.StringLatin1::charAt (28 bytes)   inline
+                                  @ 15  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                                @ 21  java/lang/StringUTF16::charAt (not loaded)   not inlineable
+22   69     n 0       java.lang.invoke.MethodHandle::invokeBasic(J)J (native)   
+                              @ 127   jdk.internal.org.objectweb.asm.ByteVector::encodeUtf8 (337 bytes)   callee is too large
+22   71     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJL)J (native)   (static)
+23   72     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLLL)L (native)   
+23   67       3       java.lang.invoke.MethodType::parameterType (7 bytes)
+23   73       3       java.lang.invoke.LambdaForm$BasicType::basicType (19 bytes)
+                              @ 1   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                              @ 12   sun.invoke.util.Wrapper::forPrimitiveType (49 bytes)   callee is too large
+                              @ 15   java.lang.invoke.LambdaForm$BasicType::basicType (10 bytes)   inline
+                                @ 1   sun.invoke.util.Wrapper::basicTypeChar (5 bytes)   inline
+                                @ 6   java.lang.invoke.LambdaForm$BasicType::basicType (187 bytes)   callee is too large
+23   74       3       java.lang.StringLatin1::hashCode (42 bytes)
+23   75       3       java.lang.invoke.MethodType$ConcurrentWeakInternSet::expungeStaleElements (27 bytes)
+               !m             @ 4   java.lang.ref.ReferenceQueue::poll (28 bytes)   inline
+                                @ 17   java.lang.ref.ReferenceQueue::reallyPoll (65 bytes)   callee is too large
+                              @ 17   java.util.concurrent.ConcurrentHashMap::remove (8 bytes)   inline
+sum=149995000
+               !m               @ 4   java.util.concurrent.ConcurrentHashMap::replaceNode (437 bytes)   callee is too large
+23   70       1       java.lang.invoke.MethodType::form (5 bytes)

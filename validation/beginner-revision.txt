@@ -1,0 +1,60 @@
+PASS en F01
+PASS zh F01
+PASS en F02
+PASS zh F02
+PASS en F03
+PASS zh F03
+PASS en F04
+PASS zh F04
+PASS en F05
+PASS zh F05
+PASS en F06
+PASS zh F06
+All 12 foundation editions passed, including bounded failure and bytecode checks.
+
+PASS en 01
+PASS zh 01
+PASS en 02
+PASS zh 02
+PASS en 03
+PASS zh 03
+PASS en 04
+PASS zh 04
+PASS en 05
+PASS zh 05
+PASS en 06
+PASS zh 06
+PASS en 07
+PASS zh 07
+PASS en 08
+PASS zh 08
+PASS en 09
+PASS zh 09
+PASS en 10
+PASS zh 10
+PASS en 11
+PASS zh 11
+PASS en 12
+PASS zh 12
+PASS en 13
+PASS zh 13
+PASS en 14
+PASS zh 14
+PASS en 15
+PASS zh 15
+PASS en 16
+PASS zh 16
+PASS en 17
+PASS zh 17
+PASS en 18
+PASS zh 18
+All 36 selected article editions passed.
+
+JDK: Homebrew OpenJDK 17.0.20, macOS arm64
+Foundation05: bounded child JVM, -Xms16m -Xmx32m -XX:+UseSerialGC
+Foundation05 incorrect-heap guard: passed
+Foundation03 bytecode walkthrough: passed
+Foundation06 arranged schedule repeat checks: passed
+
+PASS 30 bilingual pairs and 60 rendered pages
+PASS browser: English homepage, F04 graph, corresponding Chinese lesson and sidebar

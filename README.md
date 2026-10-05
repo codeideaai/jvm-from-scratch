@@ -1,0 +1,83 @@
+# Understanding the JVM, Step by Step
+
+**English** · [中文](README.zh-CN.md)
+
+From bytecode to GC, JIT compilation, and diagnostics: build understanding with runnable experiments.
+
+This series targets readers with Java experience. It now contains 26 chapters: six foundation lessons, an introduction, 18 main experiments, and an extension chapter. The baseline is HotSpot on JDK 17. Articles include explanations, complete code, commands, expected results, observation techniques, and exercises.
+
+## New to the JVM? Start here
+
+Read the [beginner route and glossary](en/tutorial/beginner-guide.md). Foundations explain each prerequisite before the main experiments. Every lesson includes a worked example and answered self-checks.
+
+| Lesson | Foundation |
+| --- | --- |
+| F01 | [Run Your First Java Program](en/foundations/F01-first-program.md) |
+| F02 | [Draw Memory Areas and Object References](en/foundations/F02-memory-and-references.md) |
+| F03 | [Trace Frames and Read a Class File](en/foundations/F03-read-bytecode.md) |
+| F04 | [Understand GC through Reference Graphs](en/foundations/F04-gc-from-graphs.md) |
+| F05 | [Separate Memory Exhaustion, Leaks, and GC Pressure](en/foundations/F05-memory-failures.md) |
+| F06 | [Draw Thread Schedules before Discussing Visibility](en/foundations/F06-threads-and-order.md) |
+
+## Start reading
+
+| Chapter | Topic |
+| --- | --- |
+| 00 | [Introduction and Learning Path](en/tutorial/00-introduction.md) |
+| 01 | [From Source Code to Bytecode](en/tutorial/01-source-to-bytecode.md) |
+| 02 | [Primitive Types and Numeric Boundaries](en/tutorial/02-primitive-types.md) |
+| 03 | [Separating Class Loading from Initialization](en/tutorial/03-class-initialization.md) |
+| 04 | [Isolating Same-Named Types with Class Loaders](en/tutorial/04-class-loader-identity.md) |
+| 05 | [Overloading and Dynamic Dispatch](en/tutorial/05-method-dispatch.md) |
+| 06 | [Exception Tables and Resource Cleanup](en/tutorial/06-exceptions-and-resources.md) |
+| 07 | [Connecting Reflection, Method Handles, and Lambdas](en/tutorial/07-reflection-method-handles-lambdas.md) |
+| 08 | [From Object References to GC Roots](en/tutorial/08-references-and-gc-roots.md) |
+| 09 | [Observing Allocation Pressure with GC Logs](en/tutorial/09-gc-logs.md) |
+| 10 | [Publishing Data with Happens-Before](en/tutorial/10-happens-before.md) |
+| 11 | [Monitors and Compound Operations](en/tutorial/11-monitors.md) |
+| 12 | [Generics and Compiler Desugaring](en/tutorial/12-generics-and-sugar.md) |
+| 13 | [Observing JIT Compilation and Inlining](en/tutorial/13-jit-and-inlining.md) |
+| 14 | [Escape Analysis, Loop Optimization, and Vectorization](en/tutorial/14-escape-analysis-and-loops.md) |
+| 15 | [Building Trustworthy Performance Experiments](en/tutorial/15-performance-experiments.md) |
+| 16 | [Connecting Thread, Heap, and JFR Evidence](en/tutorial/16-diagnostics-and-jfr.md) |
+| 17 | [A Minimal Java Agent for Object Sizes](en/tutorial/17-java-agent.md) |
+| 18 | [Case Study: Diagnosing Unbounded Cache Growth](en/tutorial/18-bounded-cache.md) |
+| 19 | [Extension Mechanisms: Compile-Time Generation and Native Execution](en/tutorial/19-extension-mechanisms.md) |
+
+## Run and verify
+
+From the project root, with JDK 17 and Python 3.9+:
+
+```bash
+python3 tools/verify_article_code.py
+python3 tools/check_links.py
+python3 tools/verify_foundations.py
+```
+
+Verification extracts code directly from both article editions, compiles each chapter independently in temporary directories, and compares its output with the text. It also checks matching sources in examples. Chapter 17 builds a temporary agent JAR. The basic suite needs no Maven or other tutorial project.
+
+```bash
+bash examples/run.sh 03
+```
+
+This runs Chapter 03. The optional [JMH project](examples/jmh/README.md) has its own Maven build and is separate from the basic suite.
+
+## Bilingual reading site
+
+English is the default homepage and navigation language. Every article has an English/中文 link to the corresponding chapter. The original Chinese article paths remain valid. Language selection is explicit; the site does not redirect based on browser language.
+
+With Quarto installed:
+
+```bash
+quarto preview
+quarto render
+```
+
+The static site is generated in _site. Deployment is not configured. See [Development](DEVELOPMENT.md) for editing and verification conventions.
+
+## Sources and verified scope
+
+- [Validation record](en/tutorial/validation.md): observed environment, results, and limitations.
+- [Technical references](en/tutorial/sources.md): specifications, version boundaries, and official documentation.
+
+GC timing, JIT decisions, and performance figures are observations rather than invented portable constants.

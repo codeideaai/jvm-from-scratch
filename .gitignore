@@ -1,0 +1,14 @@
+_site/
+.quarto/
+.build/
+*.class
+*.jfr
+*.log
+*.hprof
+__pycache__/
+examples/jmh/target/
+examples/jmh/dependency-reduced-pom.xml
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb

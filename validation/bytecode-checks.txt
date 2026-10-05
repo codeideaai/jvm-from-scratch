@@ -1,0 +1,8 @@
+PASS Demo01 major version: 61, imul, isub
+PASS Demo03 8080, getstatic
+PASS Demo05 invokevirtual, invokestatic
+PASS Demo06 Exception table:, addSuppressed
+PASS Demo07 LambdaMetafactory, InvokeDynamic
+PASS Demo11$Counter monitorenter, monitorexit
+PASS Demo12$TextSource ACC_BRIDGE, ACC_SYNTHETIC
+PASS Demo17 without agent fails explicitly
